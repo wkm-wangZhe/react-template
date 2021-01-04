@@ -1,15 +1,12 @@
 {
-  "name": "utrailer-ebs",
-  "version": "1.10.1",
-  "private": true,
+  "name": "react-tempalte",
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "dev": "cross-env  webpack-dev-server  --config build/webpack.dev.js ",
     "build:dev": "cross-env  --max_old_space_size=8192  webpack  --config build/webpack.test.js",
     "build:test": "cross-env  --max_old_space_size=8192  webpack  --config build/webpack.test.js",
-    "build:PRO_GH": "cross-env  --max_old_space_size=8192  webpack  --config build/webpack.build.js",
-    "eslint": "eslint --ext .js,.jsx,.ts,.tsx,.vue --ignore-pattern \"bad.*\" .",
-    "eslint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue src",
-    "prettier:fix": "prettier --write -l \"./**/*\""
+    "build:PRO_GH": "cross-env  --max_old_space_size=8192  webpack  --config build/webpack.build.js"
   },
   "dependencies": {
     "ali-oss": "^6.2.1",
